@@ -59,15 +59,14 @@ export default function Login({ status, canResetPassword }) {
                             <div className="absolute top-1/2 w-full h-[1px] bg-white/10 -z-10"></div>
                         </div>
 
-                    <form action="" onSubmit={submit}>
+                    <form action="" onSubmit={submit} className="space-y-5">
                         <div>
-                            <input
-                                type="email"
-                                placeholder="Email du portail"
-                                className="w-full bg-nova-dark/50 border-white/10 rounded-xl text-white placeholder:text-gray-600 focus:border-nova-primary focus:ring-nova-primary transition-all"
-                                value={data.email}
-                                onChange={(e) => setData('email', e.target.value)}
-                            />
+                            <input type="email"
+                            placeholder="Email du portail"
+                            className="w-full bg-nova-dark/50 border-white/10 rounded-xl text-white placeholder:text-gray-600 focus:border-nova-primary focus:ring-nova-primary transition-all"
+                            value={data.email}
+                            onChange={(e) => setData('email', e.target.value)}
+                        />
                             {errors.email && <p className="text-red-400 text-xs mt-1">{errors.email}</p>}
                         </div>
 
