@@ -40,6 +40,7 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'vibe_status' => $request->vibe_initiale, //On enregistre sa première Vibe !
         ]);
 
         event(new Registered($user));
