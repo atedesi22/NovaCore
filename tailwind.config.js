@@ -10,8 +10,18 @@ export default {
         './resources/js/**/*.jsx',
     ],
 
+    darkMode: 'class',
     theme: {
         extend: {
+            colors: {
+                nova: {
+                    dark: '#0b0e14',
+                    surface: '#161b22',
+                    primary: '#7c3aed',
+                    secondary: '#3b82f6',
+                    accent: '#f472b6',
+                },
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
